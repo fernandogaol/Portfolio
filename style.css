@@ -1,116 +1,68 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
 }
 
-.topnav {
+.container {
+  max-width: 960px;
+  margin: auto;
   overflow: hidden;
+  padding: 0 3rem;
+}
+
+.landing {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 100vh;
   position: relative;
 }
-.topnav #myLinks {
-  display: none;
-}
-#myLinks {
-  background: #555;
-  float: right;
-  position: fixed;
-  right: 9px;
-  top: 53px;
-}
 
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
+.landing:before {
+  content: "";
+  background: url("https://cdn57.androidauthority.net/wp-content/uploads/2018/08/learn-web-development-920x470.jpg")
+    no-repeat center center/cover;
   position: absolute;
-  right: 0;
   top: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #4caf50;
-  color: white;
-}
-
-.title {
-  text-align: center;
-  margin-top: 50px;
-}
-@media only screen and (min-width: 450px) {
-  .icon {
-    visibility: hidden;
-  }
-  .topnav #myLinks {
-    display: flex;
-    color: black;
-  }
-  #myLinks a {
-    font-size: 30px;
-  }
-  #myLinks {
-    top: 10px;
-    height: 50px;
-    width: 50%;
-  }
-  .title {
-    margin-top: 200px;
-    font-size: 30px;
-  }
-}
-
-#profile-picture img {
+  left: 0;
   width: 100%;
-  margin: auto;
-  height: 275px;
+  height: 100%;
+  z-index: -1;
 }
 
-#profile-bios {
-  width: 95%;
-  margin: auto;
-  line-height: 1.5em;
-  font-family: sans-serif;
-  font-size: 17px;
+.landing .landing-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
 
-#portfolio-squares h1 {
-  margin-top: 70px;
-  margin-bottom: 30px;
-  text-align: center;
+.landing h1 {
+  font-size: 4rem;
 }
-#portfolio-squares h2 {
-  text-align: center;
+
+.landing p {
+  font-size: 1.3rem;
 }
-@media only screen and (min-width: 430px) {
-  #profile-picture img {
-    height: 500px;
-  }
-  #profile-bios {
-    font-size: 28px;
-    line-height: 1.5em;
-  }
-  #portfolio-squares h1 {
-    margin-top: 150px;
-    margin-bottom: 40px;
-    font-size: 60px;
-  }
-  #portfolio-squares h2 {
-    text-align: center;
-    font-size: 50px;
-  }
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: opacity 0.6s ease-in;
+}
+.btn:hover {
+  opacity: 0.7;
 }
 
 .square {
