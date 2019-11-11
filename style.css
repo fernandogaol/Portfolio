@@ -74,7 +74,7 @@ body {
   color: white;
 }
 
-.footer-links {
+#footer-links {
   margin-top: 50px;
   background: #555;
   height: 100px;
@@ -95,7 +95,7 @@ body {
     height: 800px;
     width: 70%;
   }
-  .footer-links {
+  #footer-links {
     margin-top: 100px;
     height: 250px;
   }
