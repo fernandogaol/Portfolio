@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="stylingVariables.css" />
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="swiper.css">
     <title>Home</title>
 
     <!-- favicon, webkit -->
@@ -24,7 +26,7 @@
           <div>
             <ul>
               <li><a href="">Home</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href=".swiper-container">Portfolio</a></li>
               <li><a href="">About</a></li>
               <li><a href="#footer-links">Contact</a></li>
             </ul>
@@ -48,11 +50,28 @@
         <a href="portfolio.html" class="btn">Read more </a>
       </div>
     </header>
-    <main></main>
+  </main>
+  <div class="swiper-container">
+    <h1 style="text-align: center;">Portfolio</h1>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+ </main>
     <footer id="footer-links">
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
     </footer>
+    <script src="swiper.min.js"></script>
+    <script src="swiper.js"></script>
   </body>
 </html>
