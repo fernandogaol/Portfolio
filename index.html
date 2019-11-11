@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -11,14 +12,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="stylingVariables.css" />
-    <link rel="stylesheet" href="swiper.min.css">
-    <link rel="stylesheet" href="swiper.css">
+
     <title>Home</title>
 
-    <!-- favicon, webkit -->
+    <!-- favicon, webkit, remove html extensions, scroll page down -->
   </head>
   <body>
-    <div class="menu-wrap">
+    <div id="menu-wrap">
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
       <div class="menu">
@@ -26,7 +26,7 @@
           <div>
             <ul>
               <li><a href="">Home</a></li>
-              <li><a href=".swiper-container">Portfolio</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="">About</a></li>
               <li><a href="#footer-links">Contact</a></li>
             </ul>
@@ -34,44 +34,39 @@
         </div>
       </div>
     </div>
-    <header class="landing">
+    <header id="landing">
       <div class="container landing-inner">
-        <h1>Welcome</h1>
+        <h1>Hi and Welcome!</h1>
         <p>
-          Six started far placing saw respect females old. Civilly why how end
-          viewing attempt related enquire visitor. Man particular insensible
-          celebrated conviction stimulated principles day. Sure fail or in said
-          west. Right my front it wound cause fully am sorry if. She jointure
-          goodness interest debating did outweigh. Is time from them full my
-          gone in went. Of no introduced am literature excellence mr stimulated
-          contrasted increasing. Age sold some full like rich new. Amounted
-          repeated as believed in confined juvenile.
+          I am Fernando Gaol and this is my official webpage.
         </p>
-        <a href="portfolio.html" class="btn">Read more </a>
+        <a href="#bio" class="btn">Learn more </a>
       </div>
     </header>
-  </main>
-  <div class="swiper-container">
-    <h1 style="text-align: center;">Portfolio</h1>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-    </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
- </main>
+    <main role="main" id="bio">
+      <div class="profile-img"></div>
+      <div class="bio-me">
+        <h1>About me</h1>
+        <section id="about-me">
+          <p>
+            This webpage has been created for employers to view and take a look
+            at my code. I learned code mostly, but myself, but I also took a
+            Bootcamp Cohort at Thinkful which helped strenthen my skills and
+            abilities. I code for hours every day so that way I only get better
+            at what I like to do the most. Apart from coding, I like to play
+            Soccer, Volleyball, and play games on the computer such as League of
+            Legends. I also like learning new languages and socializing, even
+            though I spend most of my days on the computer. I am married and I
+            don't have any kids yet. Welcome to my webpage and feel free to look
+            around!
+          </p>
+        </section>
+      </div>
+    </main>
     <footer id="footer-links">
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
     </footer>
-    <script src="swiper.min.js"></script>
-    <script src="swiper.js"></script>
   </body>
 </html>

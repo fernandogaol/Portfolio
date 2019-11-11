@@ -15,14 +15,14 @@ body {
   padding: 0 3rem;
 }
 
-.landing {
+#landing {
   background-color: var(--primary-color);
   color: #fff;
   height: 100vh;
   position: relative;
 }
 
-.landing:before {
+#landing:before {
   content: "";
   background: url("https://cdn57.androidauthority.net/wp-content/uploads/2018/08/learn-web-development-920x470.jpg")
     no-repeat center center/cover;
@@ -34,7 +34,7 @@ body {
   z-index: -1;
 }
 
-.landing .landing-inner {
+#landing .landing-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,11 +42,11 @@ body {
   text-align: center;
   height: 100%;
 }
-.landing h1 {
+#landing h1 {
   font-size: 3rem;
 }
 
-.landing p {
+#landing p {
   font-size: 1rem;
 }
 .btn {
@@ -59,8 +59,36 @@ body {
   text-decoration: none;
   transition: opacity 0.6s ease-in;
 }
+
+.btn {
+  scroll-behavior: smooth;
+}
 .btn:hover {
   opacity: 0.7;
+}
+#bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+#bio h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.profile-img {
+  background-image: url(img/profile-picture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+  height: 40vh;
 }
 #footer-links {
   background: var(--primary-color);
