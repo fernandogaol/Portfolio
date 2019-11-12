@@ -17,9 +17,8 @@ body {
 
 #landing {
   color: #fff;
-  height: 104vh;
+  height: 100vh;
   position: relative;
-  background-color: var(--primary-color);
   z-index: 0;
 }
 
@@ -29,9 +28,9 @@ body {
     no-repeat center center/cover;
   opacity: 0.9;
   position: absolute;
-  top: 2%;
-  left: 5%;
-  right: 5%;
+  top: 0;
+  left: 0;
+  right: 0%;
   height: 100vh;
   z-index: -1;
 }
@@ -75,6 +74,7 @@ body {
   margin-top: 0;
 }
 #bio {
+  background-color: var(--primary-color);
   height: 100vh;
   margin-top: 100px;
   font-family: sans-serif, cursive;
@@ -93,7 +93,7 @@ body {
 }
 
 .about-me {
-  margin-top: 270px;
+  margin-top: 250px;
 }
 .profile-img {
   background: url(../img/profile-picture.jpg);
@@ -103,6 +103,15 @@ body {
   left: 15%;
   right: 15%;
   height: 30vh;
+}
+
+.social-link-header {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: -10px;
+  color: #444;
 }
 #social-links {
   display: flex;
