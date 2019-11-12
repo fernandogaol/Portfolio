@@ -16,21 +16,21 @@ body {
 }
 
 #landing {
-  background-color: var(--primary-color);
+  margin-top: 60px;
   color: #fff;
   height: 100vh;
   position: relative;
+  background-color: var(--primary-color);
 }
 
 #landing:before {
   content: "";
-  background: url("https://cdn57.androidauthority.net/wp-content/uploads/2018/08/learn-web-development-920x470.jpg")
+  background: url("https://www.thetrainingroom.com/getattachment/d421bbf5-e412-4c35-a5c6-34d11288833d/How-do-I-become-a-web-dev-blog-01.pngaspx")
     no-repeat center center/cover;
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -64,7 +64,7 @@ body {
   scroll-behavior: smooth;
 }
 .btn:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .bio-me {
   display: flex;
@@ -91,22 +91,36 @@ body {
   height: 50vh;
 }
 #social-links {
-  width: 70%;
-  margin: auto;
   display: flex;
-  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  height: 20vh;
 }
-.icon {
+#social-links .icon {
   height: 40px;
   width: 40px;
-  margin: auto;
   background-color: #fff;
   border-radius: 50%;
-}
-.icon .facebook-icon {
-  width: 100px;
+  cursor: pointer;
 }
 
+#social-links .facebook-icon {
+  width: 70px;
+  height: 35px;
+}
+#social-links .github-icon,
+#social-links .linkedin-icon {
+  width: 46px;
+  height: 46px;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
 #footer {
   background: var(--primary-color);
   height: 150px;
