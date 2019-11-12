@@ -84,23 +84,32 @@ body {
 }
 
 .profile-img {
-  background-image: url(img/profile-picture.jpg);
+  background-image: url(img/wedding.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 0;
   width: 100%;
   height: 50vh;
 }
-#footer-links {
+#social-links {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-content: center;
+}
+.icon {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.icon .facebook-icon {
+  width: 100px;
+}
+
+#footer {
   background: var(--primary-color);
   height: 150px;
   display: flex;
   align-content: space-between;
-}
-.circle {
-  height: 50px;
-  width: 50px;
-  margin: auto;
-  background-color: #fff;
-  border-radius: 50%;
 }
