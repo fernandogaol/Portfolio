@@ -16,20 +16,22 @@ body {
 }
 
 #landing {
-  margin-top: 60px;
   color: #fff;
-  height: 100vh;
+  height: 104vh;
   position: relative;
   background-color: var(--primary-color);
+  z-index: 0;
 }
 
 #landing:before {
   content: "";
   background: url("https://www.thetrainingroom.com/getattachment/d421bbf5-e412-4c35-a5c6-34d11288833d/How-do-I-become-a-web-dev-blog-01.pngaspx")
     no-repeat center center/cover;
+  opacity: 0.9;
   position: absolute;
-  left: 0;
-  width: 100%;
+  top: 2%;
+  left: 5%;
+  right: 5%;
   height: 100vh;
   z-index: -1;
 }
@@ -66,29 +68,41 @@ body {
 .btn:hover {
   opacity: 0.5;
 }
-.bio-me {
+#bio h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+#bio {
+  height: 100vh;
+  margin-top: 100px;
+  font-family: "Montserrat", cursive;
+  color: #444;
+}
+.bio-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: #fff;
   width: 90%;
   margin: auto;
-  height: 50vh;
-  background: #fff;
+  line-height: 2rem;
 }
 
-#bio h1 {
-  margin-top: 30px;
-  margin-bottom: 10px;
+.about-me {
+  margin-top: 270px;
 }
-
 .profile-img {
-  background-image: url(img/wedding.jpg);
+  background: url(../img/profile-picture.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 50vh;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  height: 30vh;
 }
 #social-links {
   display: flex;
@@ -98,7 +112,7 @@ body {
   text-align: center;
   width: 90%;
   margin: auto;
-  height: 20vh;
+  height: 15vh;
 }
 #social-links .icon {
   height: 40px;
@@ -111,11 +125,16 @@ body {
 #social-links .facebook-icon {
   width: 70px;
   height: 35px;
+  text-align: center;
 }
 #social-links .github-icon,
 #social-links .linkedin-icon {
   width: 46px;
   height: 46px;
+  text-align: center;
+}
+#social-links .linkedin-icon {
+  margin-left: 10px;
 }
 
 .icon:hover {
@@ -123,7 +142,18 @@ body {
 }
 #footer {
   background: var(--primary-color);
-  height: 150px;
+  height: 100px;
   display: flex;
   align-content: space-between;
+}
+
+#footer h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: 10px;
 }
