@@ -1,3 +1,8 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +20,7 @@ body {
 }
 
 #landing {
-  color: #fff;
+  background-color: var(--primary-color);
   height: 100vh;
   position: relative;
   z-index: 0;
@@ -23,9 +28,8 @@ body {
 
 #landing:before {
   content: "";
-  background: url("https://www.thetrainingroom.com/getattachment/d421bbf5-e412-4c35-a5c6-34d11288833d/How-do-I-become-a-web-dev-blog-01.pngaspx")
-    no-repeat center center/cover;
-  opacity: 0.9;
+  background: url("../img/landing.png") no-repeat center center/cover;
+  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,11 +47,30 @@ body {
   height: 100%;
 }
 #landing h1 {
-  font-size: 3rem;
+  font-family: Roboto;
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px var(--primary-color);
 }
-
-#landing p {
-  font-size: 1rem;
+.intro {
+  margin-top: 15px;
+  width: 270px;
+  height: 100px;
+  background-color: #fff;
+  border: 3px solid var(--primary-color);
+  border-radius: 12px;
+}
+.intro h2 {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.intro img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  text-align: center;
 }
 .btn {
   display: inline-block;
@@ -102,48 +125,6 @@ body {
   right: 15%;
   height: 30vh;
 }
-@media only screen and (min-width: 1080px) {
-  .profile-img {
-    height: 50vh;
-    width: 25%;
-    left: 10%;
-    margin-top: 50px;
-  }
-  #bio h1 {
-    margin-right: 200px;
-    margin-bottom: -20px;
-  }
-  #landing h1 {
-    font-size: 4rem;
-  }
-  #landing p {
-    font-size: 1.5rem;
-  }
-  #bio {
-    margin-top: 15%;
-    height: 100vh;
-  }
-  .about-me {
-    width: 50%;
-    font-size: 25px;
-    margin-left: 470px;
-    margin-top: 100px;
-    line-height: 3rem;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  .line-across {
-    background-color: black;
-    height: 4px;
-    width: 80%;
-    margin: auto;
-    border-radius: 5px 4px;
-  }
-  .line-bottom {
-    margin-top: 170px;
-  }
-}
-
 .social-link-header {
   text-align: center;
   width: 80%;
