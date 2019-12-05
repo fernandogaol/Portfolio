@@ -94,10 +94,11 @@ body {
   font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+  color: #007aff;
 }
 #bio {
-  margin-top: 100px;
-  height: 100vh;
+  margin-top: 50px;
+  height: 185vh;
   font-family: sans-serif, cursive;
   color: #444;
 }
@@ -132,7 +133,7 @@ body {
   align-items: center;
   text-align: center;
   margin: auto;
-  color: var(--primary-color);
+  color: #007aff;
 }
 #social-links {
   display: flex;
@@ -170,7 +171,7 @@ body {
   opacity: 0.7;
 }
 #footer {
-  background: var(--primary-color);
+  background: black;
   height: 100px;
   display: flex;
   align-content: space-between;
@@ -185,6 +186,7 @@ body {
   width: 80%;
   margin: auto;
   font-size: 10px;
+  color: lightsalmon;
 }
 @media only screen and (min-width: 1080px) {
   .line-across {
