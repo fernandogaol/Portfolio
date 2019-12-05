@@ -15,10 +15,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
 
     <title>Fernando Gaol</title>
-
-    <!-- favicon, webkit, remove html extensions, scroll page down -->
   </head>
   <body>
     <header id="landing">
@@ -54,7 +54,6 @@
     </header>
 
     <main id="bio">
-      <div class="line-across line-top"></div>
       <h1>ABOUT ME</h1>
       <section class="profile-img"></section>
       <section class="bio-wrapper">
@@ -73,8 +72,27 @@
           </article>
         </section>
       </section>
-      <div class="line-across line-bottom"></div>
     </main>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+    </div>
     <section class="social-link-header">
       <h4>
         Get in touch with me, let's talk code and play some games
@@ -112,19 +130,10 @@
     </section>
 
     <footer id="footer"><h3>Made with HTML, CSS, and JavaScript</h3></footer>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper.min.js"></script>
   </body>
 </html>
-
-<!-- <section class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">Quiz App</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 4</div>
-  </div>
- Add Arrows -->
-<!-- <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div> -->
-<!-- Add Pagination -->
-<!-- <div class="swiper-pagination"></div> -->
-<!-- </section> -->

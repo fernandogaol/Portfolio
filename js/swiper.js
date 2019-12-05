@@ -1,16 +1,24 @@
 function getSwiper() {
-  let swiper = new Swiper(".swiper-container", {
-    cssMode: true,
+  let mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination"
+    },
+
+    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    mousewheel: true,
-    keyboard: true
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar"
+    }
   });
 }
-
 getSwiper();
