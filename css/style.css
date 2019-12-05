@@ -98,7 +98,7 @@ body {
 }
 #bio {
   margin-top: 50px;
-  height: 185vh;
+  height: 200vh;
   font-family: sans-serif, cursive;
   color: #444;
 }
@@ -189,19 +189,79 @@ body {
   color: lightsalmon;
 }
 @media only screen and (min-width: 1080px) {
-  .line-across {
-    margin-bottom: 100px;
+  #landing:before {
+    opacity: 0.75;
+  }
+  #landing h1 {
+    font-size: 55px;
+  }
+  .intro {
+    width: 450px;
+    height: 130px;
+    padding: 20px;
+  }
+  .intro h2 {
+    font-size: 27px;
+  }
+  .intro img {
+    width: 65px;
+    height: 65px;
+  }
+  #bio h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 0.9rem 1.7rem;
+    font-size: 22px;
+  }
+  #bio h1 {
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #007aff;
+  }
+  #bio {
+    height: 125vh;
+  }
+  .profile-img {
+    width: 30%;
+    height: 530px;
+    margin-bottom: 40px;
+  }
+  .about-me article {
+    width: 90%;
+    margin: auto;
+    line-height: 2.4rem;
+    font-size: 22px;
   }
   .social-link-header {
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    width: 35%;
+    height: 30vh;
+  }
+  #social-links .icon {
+    width: 60px;
+    height: 60px;
+  }
+  #social-links .facebook-icon {
+    width: 105px;
+    height: 55px;
+  }
+  #social-links .github-icon,
+  #social-links .linkedin-icon {
+    width: 70px;
+    height: 70px;
+  }
+  #social-links .linkedin-icon {
+    margin-left: 15px;
   }
 
-  #footer-wrapper {
-    background: #fff;
+  #footer {
+    height: 150px;
   }
   #footer h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .btn {
     transition: opacity 0.6s ease-in;
