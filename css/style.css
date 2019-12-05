@@ -50,7 +50,6 @@ body {
   font-family: Roboto;
   color: #fff;
   font-size: 2.5rem;
-  text-shadow: 2px 2px var(--primary-color);
   font-weight: bold;
 }
 .intro {
@@ -127,8 +126,11 @@ body {
   border-radius: 5px;
 }
 .social-link-header {
-  text-align: center;
   width: 80%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin: auto;
   color: var(--primary-color);
 }
@@ -139,7 +141,7 @@ body {
   text-align: center;
   width: 50%;
   margin: auto;
-  height: 20vh;
+  height: 10vh;
 }
 #social-links .icon {
   height: 40px;
