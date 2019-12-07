@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   height: 110vh;
-  z-index: -1;
+  z-index: 0;
 }
 .swiper-container h1 {
   text-align: center;
@@ -33,7 +33,7 @@
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center; */
-  z-index: -1;
+  z-index: 0;
 }
 .swiper-slide article {
   width: 85%;
