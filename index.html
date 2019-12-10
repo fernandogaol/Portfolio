@@ -15,8 +15,6 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
 
     <title>Fernando Gaol</title>
   </head>
@@ -30,8 +28,8 @@
             <div>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href=".swiper-container">Portfolio</a></li>
                 <li><a href="#bio">About</a></li>
+                <li><a href="#projects-container">Portfolio</a></li>
                 <li><a href="#social-links">Contact</a></li>
               </ul>
             </div>
@@ -49,105 +47,107 @@
           <img src="./img/html.png" alt="html logo in png" />
           <img src="./img/css.png" alt="css logo in png" />
         </section>
-        <a href="#bio" class="btn">Learn more </a>
+        <a href="#bio" id="btn">Learn more </a>
       </div>
     </header>
 
-    <main id="bio">
-      <h1>ABOUT ME</h1>
-      <section class="profile-img"></section>
-      <div class="bio-wrapper">
-        <section class="about-me">
-          <article>
-           Hi and welcome to my page. My name is <font color="darkorange"><strong>Fernando Gaol</strong></font>
-           and I am based in Provo, UT. My story as a developer started when I was 13
-           and I decided to build a game.  I was able to pull it off by watching tutorials, but I had no idea
-           how that code worked. From there on, I tried building more complex games,
-           but my abilities were limited. I failed multiple times so I decided to learn 
-          more in depth how to code. However, when I was searching for game development on the web,
-           I also found web development.  For some reason, web development caught my attention the most
-           so I started taking some course on <font color="darkblue"><strong>Code Academy</strong></font> such as 
-           <font color="green"><strong>HTML, CSS, and JavaScript</strong></font>. I 
-           started coding for hours every day so that I could get better at
-          what I like to do the most. Over time, I improved a lot and gained more skills, 
-          but I got to a point where the courses were no longer helping me learn and I hit a plato.
-          That is why I am currently taking a Full Stack Bootcamp at 
-          <font color="darkblue"><strong>Thinkful</strong></font>. My goal is make to the best out of it
-          and utilize all the resources that I now have available such as mentors, instructors and technical support.
-           I strongly believe that with this cohort, I will be able to fill in the gap and gain the skills I have not yet been able to acquire. </br>
-           Apart from coding, I like to play soccer, volleyball, and play games on the computer such as League of
-            Legends, Call of Duty, and more. I also like learning new languages and spending time with friends and family, even
-            though I spend most of my days on the computer. Other than that, I am married and I
-            don't have any kids yet, but I do plan to have a couple of them after I develop my skills
-             as a web developer.
-          </article>
-        </section>
+    <main id="main">
+      <div id="bio">
+        <h1>ABOUT ME</h1>
+        <section class="profile-img"></section>
+        <div class="bio-wrapper">
+          <section class="about-me">
+            <article>
+              Hi and welcome to my page. My name is
+              <a href="" class="my-name">Fernando Gaol</a> and I am based in
+              Provo, UT. My story as a developer started when I was 13 and I
+              decided to build a game. I was able to pull it off by watching
+              tutorials, but I had no idea how that code worked. From there on,
+              I tried building more complex games, but my abilities were
+              limited. I failed multiple times so I decided to learn more in
+              depth how to code. However, when I was searching for game
+              development on the web, I also found web development. For some
+              reason, web development caught my attention the most so I started
+              taking some course on
+              <a href="" class="code-academy">Code Academy</a> such as
+              <a href="" class="bio-skills">HTML, CSS, and JavaScript</a>. I
+              started coding for hours every day so that I could get better at
+              what I like to do the most. Over time, I improved a lot and gained
+              more skills, but I got to a point where the courses were no longer
+              helping me learn and I hit a plato. That is why I am currently
+              taking a Full Stack Bootcamp at
+              <a
+                href="https://www.thinkful.com/"
+                target="blanket"
+                class="thinkful"
+                >Thinkful</a
+              >. My goal is make to the best out of it and utilize all the
+              resources that I now have available such as mentors, instructors
+              and technical support. I strongly believe that with this cohort, I
+              will be able to fill in the gap and gain the skills I have not yet
+              been able to acquire. <br />
+              Apart from coding, I like to play soccer, volleyball, and play
+              games on the computer such as League of Legends, Call of Duty, and
+              more. I also like learning new languages and spending time with
+              friends and family, even though I spend most of my days on the
+              computer. Other than that, I am married and I don't have any kids
+              yet, but I do plan to have a couple of them after I develop my
+              skills as a web developer.
+            </article>
+          </section>
+        </div>
       </div>
     </main>
-    <!-- Slider main container -->
-    <section class="swiper-container">
+    <section id="projects-container">
       <h1>PROJECTS</h1>
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div
-          class="swiper-slide slide-1
-        "
-        >
-          <h2>Quiz App</h2>
-          <article>
-            This project was built to test your knowledge about soccer. There
-            are 5 questions and no question can be skipped. This App gives
-            feedback about whether or not you got the right answer. At the end,
-            it will display the final score and it will have
-            how many questions you answered correctly out of 5 questions.</br></br>
-          </article>
-          <section class="skills-used">
-              <h4>Built with</h4>
-              <img src="./img/js.png" alt="javascript logo in png" />
-              <img src="./img/jquery.png" alt="jquery logo in png" />
-              <img src="./img/html.png" alt="html logo in png" />
-              <img src="./img/css.png" alt="css logo in png" />
 
-          </section>
-          <section class="article-links">
-          <a href="https://github.com/fernandogaol/Quiz-app" target="_blanket">Github</a>
-          <a href="https://fernandogaol.github.io/Quiz-app/" target="_blanket">Live</a>
-          </section>
-         
-        </div>
-        <div class="swiper-slide slide-2">Slide 2</div>
-        <div class="swiper-slide slide-3">Slide 3</div>
-        <div class="swiper-slide slide-4">Slide 4</div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </section>
-    <section class="social-link-header">
-        <h4>
-          Get in touch with me, let's talk code and play some games
-        </h4>
+      <h2>Quiz App</h2>
+      <article>
+        This project was built to test your knowledge about soccer. There are 5
+        questions and no question can be skipped. This App gives feedback about
+        whether or not you got the right answer. At the end, it will display the
+        final score and it will have how many questions you answered correctly
+        out of 5 questions.<br />
+      </article>
+      <section class="skills-used">
+        <h4>Built with</h4>
+        <img src="./img/js.png" alt="javascript logo in png" />
+        <img src="./img/jquery.png" alt="jquery logo in png" />
+        <img src="./img/html.png" alt="html logo in png" />
+        <img src="./img/css.png" alt="css logo in png" />
       </section>
+      <section class="article-links">
+        <a href="https://github.com/fernandogaol/Quiz-app" target="blanket"
+          >Github</a
+        >
+        <a href="https://fernandogaol.github.io/Quiz-app/" target="blanket"
+          >Live</a
+        >
+      </section>
+    </section>
+
+    <section class="social-link-header">
+      <h4>
+        Get in touch with me, let's talk code and play some games
+      </h4>
+    </section>
+
     <section id="social-links">
       <a
         href="mailto:fernandofeigo@hotmail.com?Subject=Greetings%20Fernando"
-        target="_blanket"
+        target="blanket"
         ><img
           class="icon email-icon"
           src="img/email.png"
           alt="my personal email address"
       /></a>
-      <a href="https://www.facebook.com/fernando.feigo" target="_blanket"
+      <a href="https://www.facebook.com/fernando.feigo" target="blanket"
         ><img
           class="icon facebook-icon"
           src="img/facebook.png"
           alt="my personal facebook page"
       /></a>
-      <a href="https://github.com/fernandogaol" target="_blanket"
+      <a href="https://github.com/fernandogaol" target="blanket"
         ><img
           class="icon github-icon"
           src="img/github.png"
@@ -155,7 +155,7 @@
       /></a>
       <a
         href="https://www.linkedin.com/in/fernando-gaol-062b71135/"
-        target="_blanket"
+        target="blanket"
         ><img
           class="icon linkedin-icon"
           src="img/linkedin.png"
@@ -164,10 +164,5 @@
     </section>
 
     <footer id="footer"><h3>Made with HTML, CSS, and JavaScript</h3></footer>
-
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/swiper.min.js"></script>
   </body>
 </html>
