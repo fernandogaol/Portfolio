@@ -8,6 +8,10 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -20,7 +24,7 @@ body {
 }
 
 #landing {
-  background-color: var(--primary-color);
+  background-color: rgba(13, 110, 139, 0.75);
   height: 100vh;
   position: relative;
   z-index: 0;
@@ -57,12 +61,12 @@ body {
   width: 270px;
   height: 110px;
   background-color: #fff;
-  border: 2px solid var(--primary-color);
+  border: 2px solid rgba(13, 110, 139, 0.75);
   border-radius: 12px;
   padding: 7px 0;
 }
 .intro h2 {
-  color: var(--primary-color);
+  color: rgba(13, 110, 139, 0.75);
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -74,10 +78,10 @@ body {
   text-align: center;
   position: relative;
 }
-.btn {
+#btn {
   display: inline-block;
   border: none;
-  background-color: var(--primary-color);
+  background-color: rgba(13, 110, 139, 0.75);
   color: #fff;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
@@ -85,11 +89,6 @@ body {
   border: 1px solid #fff;
   border-radius: 4px;
 }
-
-.btn {
-  scroll-behavior: smooth;
-}
-
 #bio h1 {
   font-size: 30px;
   text-align: center;
@@ -98,9 +97,33 @@ body {
 }
 #bio {
   margin-top: 50px;
-  height: 200vh;
+  height: 190vh;
   font-family: sans-serif, cursive;
   color: #444;
+}
+.thinkful {
+  list-style: none;
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+.my-name {
+  list-style: none;
+  text-decoration: none;
+  color: darkorange;
+  font-weight: bold;
+}
+.bio-skills {
+  list-style: none;
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+}
+.code-academy {
+  list-style: none;
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
 }
 .bio-wrapper {
   display: block;
@@ -126,14 +149,64 @@ body {
   margin: auto;
   border-radius: 5px;
 }
-.social-link-header {
+#projects-container {
+  background: rgb(46, 44, 44);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 50px;
+}
+#projects-container h1 {
+  text-align: center;
+  color: #007aff;
+}
+#projects-container h2,
+h4 {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+#projects-container article {
+  color: lightsalmon;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+.skills-used {
+  text-align: center;
+}
+.skills-used h4 {
+  padding: 8px;
+}
+#projects-container img {
+  height: 50px;
+  background: #fff;
+  z-index: 0;
+}
+.article-links a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(24, 39, 51, 0.85);
+  font-weight: bold;
+  border: 2px solid rgba(24, 39, 51, 0.85);
+  border-radius: 4px;
+  background: lightsalmon;
+  padding: 4px 10px;
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  margin: 5px auto;
+}
+.social-link-header h4 {
+  color: #007aff;
   width: 80%;
   height: 20vh;
   display: flex;
   align-items: center;
   text-align: center;
   margin: auto;
-  color: #007aff;
 }
 #social-links {
   display: flex;
@@ -188,6 +261,11 @@ body {
   font-size: 10px;
   color: lightsalmon;
 }
+@media only screen and ((min-width: 400px) and (max-width: 500px)) {
+  #bio {
+    height: 135vh;
+  }
+}
 @media only screen and (min-width: 1080px) {
   #landing:before {
     opacity: 0.75;
@@ -219,7 +297,6 @@ body {
     font-size: 37px;
     text-align: center;
     margin-bottom: 10px;
-    color: #007aff;
   }
   #bio {
     height: 125vh;
@@ -235,7 +312,7 @@ body {
     line-height: 2.4rem;
     font-size: 22px;
   }
-  .social-link-header {
+  .social-link-header h4 {
     font-size: 24px;
     width: 35%;
     height: 30vh;
