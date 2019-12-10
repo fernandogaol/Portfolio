@@ -97,7 +97,8 @@ body {
 }
 #bio {
   margin-top: 50px;
-  height: 190vh;
+  margin-bottom: 50px;
+  height: 100%;
   font-family: sans-serif, cursive;
   color: #444;
 }
@@ -144,9 +145,9 @@ body {
   background: url(../img/profile-picture.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 70vw;
-  height: 30vh;
-  margin: auto;
+  width: 250px;
+  height: 400px;
+  margin: 0 auto;
   border-radius: 5px;
 }
 #projects-container {
@@ -171,7 +172,10 @@ h4 {
 #projects-container article {
   color: lightsalmon;
   margin: 0 auto;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 3.5vmin;
 }
 .skills-used {
   text-align: center;
@@ -195,18 +199,20 @@ h4 {
   background: lightsalmon;
   padding: 4px 10px;
   display: flex;
-  width: 30%;
+  width: 80px;
+  height: 30px;
   justify-content: center;
   margin: 5px auto;
 }
 .social-link-header h4 {
   color: #007aff;
   width: 80%;
-  height: 20vh;
+  height: 200px;
+  margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
 }
 #social-links {
   display: flex;
@@ -262,12 +268,29 @@ h4 {
   font-size: 10px;
   color: lightsalmon;
 }
-@media only screen and ((min-width: 400px) and (max-width: 500px)) {
-  #bio {
-    height: 135vh;
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  #projects-container h2 {
+    font-size: 3.5vmin;
+  }
+  #projects-container article {
+    line-height: 2.2rem;
+    font-size: 3vmin;
+  }
+  #projects-container h1 {
+    font-size: 5vmin;
+  }
+  .skills-used img {
+    height: 200px;
+  }
+  .skills-used h4 {
+    font-size: 2.2vmin;
+  }
+  .article-links a {
+    width: 120px;
+    height: 35px;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 801px) and (max-width: 1800px) {
   #landing:before {
     opacity: 0.75;
   }
@@ -299,9 +322,6 @@ h4 {
     text-align: center;
     margin-bottom: 10px;
   }
-  #bio {
-    height: 125vh;
-  }
   .profile-img {
     width: 30%;
     height: 530px;
@@ -312,6 +332,32 @@ h4 {
     margin: auto;
     line-height: 2.4rem;
     font-size: 22px;
+  }
+  #projects-container {
+    width: 98%;
+    margin: auto;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+  }
+  #projects-container h2 {
+    font-size: 3.5vmin;
+  }
+  #projects-container article {
+    line-height: 2.5rem;
+    font-size: 2.6vmin;
+  }
+  #projects-container h1 {
+    font-size: 4.5vmin;
+  }
+  .skills-used img {
+    height: 200px;
+  }
+  .skills-used h4 {
+    font-size: 2vmin;
+  }
+  .article-links a {
+    width: 110px;
+    height: 35px;
   }
   .social-link-header h4 {
     font-size: 24px;
