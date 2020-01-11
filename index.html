@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="css/menu.css" />
 
     <title>Fernando Gaol</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="landing">
@@ -27,10 +32,12 @@
           <div>
             <div>
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#bio">About</a></li>
-                <li><a href="#projects-container">Portfolio</a></li>
-                <li><a href="#social-links">Contact</a></li>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="#bio" class="about">About</a></li>
+                <li>
+                  <a href="#projects-container" class="projects">Portfolio</a>
+                </li>
+                <li><a href="#social-links" class="contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -59,7 +66,7 @@
           <section class="about-me">
             <article>
               Hi and welcome to my page. My name is
-              <a href="" class="my-name">Fernando Gaol</a> and I am based in
+              <a class="my-name">Fernando Gaol</a> and I am based in
               Provo, UT. My story as a developer started when I was 13 and I
               decided to build a game. I was able to pull it off by watching
               tutorials, but I had no idea how that code worked. From there on,
@@ -68,9 +75,9 @@
               depth how to code. However, when I was searching for game
               development on the web, I also found web development. For some
               reason, web development caught my attention the most so I started
-              taking some course on
-              <a href="" class="code-academy">Code Academy</a> such as
-              <a href="" class="bio-skills">HTML, CSS, and JavaScript</a>. I
+              taking some courses on
+              <a  class="code-academy">Code Academy</a> such as
+              <a  class="bio-skills">HTML, CSS, and JavaScript</a>. I
               started coding for hours every day so that I could get better at
               what I like to do the most. Over time, I improved a lot and gained
               more skills, but I got to a point where the courses were no longer
@@ -164,5 +171,6 @@
     </section>
 
     <footer id="footer"><h3>Made with HTML, CSS, and JavaScript</h3></footer>
+    <script src="index.js"></script>
   </body>
 </html>

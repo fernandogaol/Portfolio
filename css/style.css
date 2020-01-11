@@ -274,7 +274,7 @@ h4 {
   }
   #projects-container article {
     line-height: 2.2rem;
-    font-size: 3vmin;
+    font-size: 16px;
   }
   #projects-container h1 {
     font-size: 5vmin;
@@ -290,7 +290,7 @@ h4 {
     height: 35px;
   }
 }
-@media only screen and (min-width: 801px) and (max-width: 1800px) {
+@media only screen and (min-width: 801px) and (max-width: 2000px) {
   #landing:before {
     opacity: 0.75;
   }
@@ -330,8 +330,7 @@ h4 {
   .about-me article {
     width: 90%;
     margin: auto;
-    line-height: 2.4rem;
-    font-size: 22px;
+    line-height: 1.8rem;
   }
   #projects-container {
     width: 98%;
