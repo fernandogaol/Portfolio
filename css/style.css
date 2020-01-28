@@ -13,7 +13,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container:before {
@@ -31,8 +31,8 @@ body {
 }
 
 #landing:before {
-  content: "";
-  background: url("../img/landing.png") no-repeat center center/cover;
+  content: '';
+  background: url('../img/landing.png') no-repeat center center/cover;
   opacity: 0.7;
   position: absolute;
   top: 0;
@@ -89,6 +89,9 @@ body {
   border: 1px solid #fff;
   border-radius: 4px;
 }
+#btn:hover {
+  opacity: 0.7;
+}
 #bio h1 {
   font-size: 30px;
   text-align: center;
@@ -111,7 +114,7 @@ body {
 .my-name {
   list-style: none;
   text-decoration: none;
-  color: darkorange;
+  color: black;
   font-weight: bold;
 }
 .bio-skills {
@@ -141,8 +144,8 @@ body {
   margin-top: 30px;
 }
 .profile-img {
-  content: "";
-  background: url(../img/profile-picture.jpg);
+  content: '';
+  background: url(../img/wedding2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 250px;
@@ -203,6 +206,9 @@ h4 {
   height: 30px;
   justify-content: center;
   margin: 5px auto;
+}
+.article-links a:hover {
+  opacity: 0.7;
 }
 .social-link-header h4 {
   color: #007aff;
@@ -323,8 +329,8 @@ h4 {
     margin-bottom: 10px;
   }
   .profile-img {
-    width: 30%;
-    height: 530px;
+    width: 20%;
+    height: 600px;
     margin-bottom: 40px;
   }
   .about-me article {
