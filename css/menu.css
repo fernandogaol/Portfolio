@@ -43,7 +43,7 @@
 /* top and bottom line together at the top*/
 #menu-wrap .hamburger > div:before,
 #menu-wrap .hamburger > div:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: -10px;
