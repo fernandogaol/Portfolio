@@ -95,11 +95,10 @@ body {
 #bio h1 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 10px;
   color: #007aff;
 }
 #bio {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
   height: 100%;
   font-family: sans-serif, cursive;
@@ -137,7 +136,7 @@ body {
   margin: auto;
   line-height: 1.7rem;
   font-family: Roboto;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .about-me article {
   text-align: left;
@@ -149,43 +148,55 @@ body {
   background-repeat: no-repeat;
   width: 300px;
   height: 450px;
-  margin: 50px auto;
+  margin: 30px auto;
 
   border-radius: 5px;
 }
 #projects-container {
   background: rgb(46, 44, 44);
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 50px;
+  justify-content: space-evenly;
+  padding: 15px;
 }
 #projects-container h2 {
   text-align: center;
   color: #007aff;
   padding: 20px;
 }
-
 #projects-container,
 h4 {
   color: #fff;
   margin: 0 auto;
   text-align: center;
 }
-#projects-container article {
+.quiz-info {
   color: lightsalmon;
-  line-height: 35px;
-  width: 70%;
-  font-size: 3.5vmin;
-  margin: 0 auto;
+  line-height: 25px;
+  width: 300px;
+  font-size: 16px;
+  margin: 10px auto;
   text-align: left;
 }
 .skills-used {
   text-align: center;
 }
+
+.skills-used img {
+  border-radius: 5px;
+}
 .skills-used h4 {
   padding: 8px;
+}
+.quiz-app-img {
+  background: url('../img/soccer\ jquery\ app.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 #projects-container img {
   height: 50px;
@@ -206,6 +217,7 @@ h4 {
   width: 80px;
   height: 30px;
   justify-content: center;
+  align-items: center;
   margin: 5px auto;
 }
 .article-links a:hover {
@@ -213,17 +225,36 @@ h4 {
 }
 #social-links h3 {
   color: #007aff;
+  margin: 30px;
 }
-#social-links {
+#bottom-appeal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 50%;
+  text-align: left;
+  width: 80%;
   margin: auto;
-  height: 400px;
+  height: 200px;
+  color: black;
+  margin: auto;
+}
+.bottom-border {
+  border-bottom: 3px solid #007aff;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+.icon:hover {
+  opacity: 0.7;
+}
+#footer {
+  width: 100%;
+  background: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 #social-links .icon {
   height: 40px;
@@ -231,62 +262,48 @@ h4 {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
+  padding: 2px;
+  margin: 10px;
 }
 
-.icon:hover {
-  opacity: 0.7;
-}
-#footer {
-  width: 100vw;
-  background: black;
-  height: 100px;
-  display: flex;
-  align-content: space-between;
-}
-
-#footer h3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  font-size: 10px;
-  color: lightsalmon;
-}
-@media only screen and (min-width: 450px) {
-  /* .projects-container article {
-    line-height: 25px;
-  } */
-}
-
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   #landing:before {
     opacity: 0.75;
+  }
+  .intro {
+    padding: 30px;
+    margin: 30px;
+  }
+  #btn {
+    font-size: 25px;
+  }
+  .intro img {
+    height: 100px;
+    width: 100px;
   }
   #landing h1 {
     font-size: 55px;
   }
   .intro {
-    width: 450px;
+    width: 500px;
+    height: 180px !important;
     height: 130px;
     padding: 20px;
   }
   .intro h2 {
-    font-size: 27px;
+    font-size: 35px;
+    margin: 10px;
   }
   .intro img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
   }
   #bio h1 {
     margin-top: 50px;
     margin-bottom: 20px;
   }
-  .btn {
-    padding: 0.9rem 1.7rem;
-    font-size: 22px;
+  #btn {
+    font-size: 30px;
   }
   #bio h1 {
     font-size: 37px;
@@ -300,34 +317,41 @@ h4 {
   .about-me article {
     width: 90%;
     margin: auto;
-    line-height: 2.4rem;
-    font-size: 1.4rem;
+    line-height: 45px;
+    font-size: 27px;
   }
   #projects-container {
-    width: 98%;
     margin: auto;
     border: 3px solid lightblue;
     border-radius: 10px;
   }
   #projects-container h2 {
-    font-size: 3.5vmin;
+    font-size: 45px;
   }
-  #projects-container article {
-    line-height: 40px;
-    font-size: 2.6vmin;
+  #projects-container h3 {
+    font-size: 35px;
   }
-  #projects-container h1 {
-    font-size: 4.5vmin;
+  .quiz-app-img {
+    width: 500px;
+    height: 250px;
+  }
+  .quiz-info {
+    line-height: 50px;
+    width: 70%;
+    font-size: 1.8rem;
   }
   .skills-used img {
-    height: 200px;
+    width: 80px;
+    height: 80px !important;
+    margin: 3px;
   }
   .skills-used h4 {
-    font-size: 2vmin;
+    font-size: 25px;
   }
   .article-links a {
-    width: 110px;
-    height: 35px;
+    width: 135px;
+    height: 40px;
+    font-size: 23px;
   }
   .social-link-header h4 {
     font-size: 24px;
@@ -335,15 +359,15 @@ h4 {
     height: 30vh;
   }
   #social-links .icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    margin: 30px;
   }
-  #social-links .github-icon,
-  #social-links .linkedin-icon {
-    width: 70px;
-    height: 70px;
+  #bottom-appeal h3 {
+    width: 70%;
+    font-size: 27px;
+    text-align: center;
   }
-
   #footer {
     height: 150px;
   }
@@ -366,7 +390,5 @@ h4 {
     font-size: 26px;
   }
   #social-links {
-    font-size: 21px;
-    width: 25%;
   }
 }
