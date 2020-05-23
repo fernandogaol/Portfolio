@@ -92,7 +92,7 @@ body {
 #btn:hover {
   opacity: 0.7;
 }
-#bio h1 {
+#bio h2 {
   font-size: 30px;
   text-align: center;
   color: #007aff;
@@ -103,6 +103,9 @@ body {
   height: 100%;
   font-family: sans-serif, cursive;
   color: #444;
+}
+.profile-img h6 {
+  visibility: hidden;
 }
 .thinkful {
   list-style: none;
@@ -141,6 +144,9 @@ body {
 .about-me article {
   text-align: left;
   margin-top: 30px;
+}
+.about-me h6 {
+  visibility: hidden;
 }
 .profile-img {
   background: url(../img/profile-picture.jpg);
@@ -264,7 +270,15 @@ h4 {
   padding: 2px;
   margin: 10px;
 }
-
+.quiz-app-img h5 {
+  visibility: hidden;
+}
+.quiz-info h4 {
+  visibility: hidden;
+}
+.article-links h3 {
+  visibility: hidden;
+}
 @media only screen and (min-width: 750px) {
   #landing:before {
     opacity: 0.75;
@@ -329,16 +343,19 @@ h4 {
   }
   #projects-container h3 {
     font-size: 35px;
+    padding: 10px;
   }
   .quiz-app-img {
     width: 500px;
     height: 250px;
   }
+
   .quiz-info {
     line-height: 50px;
     width: 70%;
     font-size: 1.8rem;
   }
+
   .skills-used img {
     width: 80px;
     height: 80px !important;
@@ -352,6 +369,7 @@ h4 {
     height: 40px;
     font-size: 23px;
   }
+
   .social-link-header h4 {
     font-size: 24px;
     width: 35%;
