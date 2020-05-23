@@ -230,8 +230,7 @@ h4 {
 #bottom-appeal {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: left;
   width: 80%;
@@ -240,10 +239,13 @@ h4 {
   color: black;
   margin: auto;
 }
+#bottom-appeal h3 {
+  width: 100%;
+}
 .bottom-border {
+  border-top: 3px solid #007aff;
   border-bottom: 3px solid #007aff;
-  border-radius: 10px;
-  margin: 15px 0px;
+  padding: 10px;
 }
 #footer {
   width: 100%;
