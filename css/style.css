@@ -53,13 +53,13 @@ body {
 #landing h1 {
   font-family: Roboto;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 35px;
   font-weight: bold;
 }
 .intro {
   margin-top: 15px;
-  width: 270px;
-  height: 110px;
+  width: 320px;
+  height: 170px;
   background-color: #fff;
   border: 2px solid rgba(13, 110, 139, 0.75);
   border-radius: 12px;
@@ -74,7 +74,7 @@ body {
 .intro img {
   width: 60px;
   height: 60px;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   position: relative;
 }
@@ -158,29 +158,45 @@ body {
 
   border-radius: 5px;
 }
-#projects-container {
+#projects-container-quiz,
+#projects-container-itav,
+#projects-container-gtpro {
   background: rgb(46, 44, 44);
+  width: 340px;
   height: 120vh;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#projects-container h2 {
+#projects-container-title h2 {
   text-align: center;
   color: #007aff;
-  padding: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
 }
-#projects-container,
-h4 {
+#projects-container-quiz h4,
+#projects-container-itav h4,
+#projects-container-gtpro h4 {
   color: #fff;
   margin: 0 auto;
   text-align: center;
 }
-.quiz-info {
+#projects-container-quiz h3,
+#projects-container-itav h3,
+#projects-container-gtpro h3 {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-info {
   color: lightsalmon;
   line-height: 25px;
-  width: 300px;
+  width: 260px;
   font-size: 16px;
   margin: 10px auto;
   text-align: left;
@@ -196,15 +212,35 @@ h4 {
   padding: 8px;
 }
 .quiz-app-img {
-  background: url('../img/soccer\ jquery\ app.png');
+  background: url('../img/quiz-app.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 300px;
-  height: 150px;
+  height: 450px;
   margin: 0 auto;
   border-radius: 5px;
 }
-#projects-container img {
+.gtpro-app-img {
+  background: url('../img/gtpro.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.itav-app-img {
+  background: url('../img/itav.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#projects-container-quiz img,
+#projects-container-itav img,
+#projects-container-gtpro img {
   height: 50px;
   background: #fff;
   z-index: 0;
@@ -262,9 +298,8 @@ h4 {
 #footer {
   width: 100%;
   background: black;
-  height: 100px;
-  position: fixed;
-  bottom: 0;
+  height: 80px;
+  position: absolute;
 }
 #social-links .icon {
   height: 40px;
@@ -276,7 +311,7 @@ h4 {
 .quiz-app-img h5 {
   visibility: hidden;
 }
-.quiz-info h4 {
+.app-info h4 {
   visibility: hidden;
 }
 .article-links h3 {
@@ -286,33 +321,25 @@ h4 {
   #landing:before {
     opacity: 0.75;
   }
-  .intro {
-    padding: 30px;
-    margin: 30px;
-  }
+
   #btn {
     font-size: 25px;
   }
-  .intro img {
-    height: 100px;
-    width: 100px;
-  }
+
   #landing h1 {
     font-size: 55px;
   }
   .intro {
-    width: 500px;
-    height: 180px !important;
-    height: 130px;
-    padding: 20px;
+    width: 550px;
+    height: 180px;
+  }
+  .intro img {
+    width: 70px;
+    height: 70px;
   }
   .intro h2 {
     font-size: 35px;
     margin: 10px;
-  }
-  .intro img {
-    width: 80px;
-    height: 80px;
   }
   #bio h1 {
     margin-top: 50px;
@@ -336,34 +363,7 @@ h4 {
     line-height: 45px;
     font-size: 27px;
   }
-  #projects-container {
-    margin: auto;
-    border: 3px solid lightblue;
-    border-radius: 10px;
-  }
-  #projects-container h2 {
-    font-size: 45px;
-  }
-  #projects-container h3 {
-    font-size: 35px;
-    padding: 10px;
-  }
-  .quiz-app-img {
-    width: 500px;
-    height: 250px;
-  }
 
-  .quiz-info {
-    line-height: 50px;
-    width: 70%;
-    font-size: 1.8rem;
-  }
-
-  .skills-used img {
-    width: 80px;
-    height: 80px !important;
-    margin: 3px;
-  }
   .skills-used h4 {
     font-size: 25px;
   }
@@ -379,8 +379,8 @@ h4 {
     height: 30vh;
   }
   #social-links .icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 20px;
   }
 
@@ -390,7 +390,7 @@ h4 {
     text-align: center;
   }
   #footer {
-    height: 120px;
+    height: 95px;
   }
   #footer h3 {
     font-size: 16px;
@@ -404,8 +404,13 @@ h4 {
 }
 
 @media only screen and (min-width: 1050px) {
-  #projects-container {
-    width: 60%;
+  #projects-container-quiz,
+  #projects-container-itav,
+  #projects-container-gtpro {
+    float: right;
+  }
+  .project-wrapper {
+    display: flex;
   }
   #projects-container h3 {
     font-size: 26px;
