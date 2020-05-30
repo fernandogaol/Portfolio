@@ -233,6 +233,11 @@ h4 {
   color: #007aff;
   margin: 30px;
 }
+#social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 #bottom-appeal {
   display: flex;
   flex-direction: row;
@@ -378,11 +383,7 @@ h4 {
     height: 60px;
     margin: 20px;
   }
-  #social-links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+
   #bottom-appeal h3 {
     width: 100%;
     font-size: 27px;
