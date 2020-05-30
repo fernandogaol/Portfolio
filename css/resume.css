@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-main {
+  overflow: auto;
+  height: auto;
+  padding-bottom: 120px;
+}
+.resume-name {
+  background-color: rgb(46, 44, 44);
+  color: rgb(255, 155, 116);
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.personal-info {
+  color: #fff;
+}
+.summary h2,
+.recent_projects h2,
+.experience h2,
+.education h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgb(46, 44, 44);
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+  font-family: cursive;
+}
+.summary {
+  margin-top: 10px;
+}
+.summary,
+.recent_projects,
+.experience,
+.education {
+  text-align: left;
+  padding: 10px 15px;
+  line-height: 25px;
+  font-family: sans-serif;
+}
+.summary h3,
+.recent_projects h3,
+.experience h3,
+.education h3 {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  color: darksalmon;
+}
+.summary p {
+  padding-left: 15px;
+}
+
+.recent_projects ul,
+.experience ul,
+.education ul {
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+.experience {
+  padding: 10px;
+}
+.experience span,
+.education span {
+  padding-left: 15px;
+}
+#resume-links .icon {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px;
+  margin: 20px;
+}
+#resume-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px;
+}
+#footer {
+  width: 100%;
+  background: black;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+@media only screen and (min-width: 1050px) {
+  #resume-links a:hover {
+    background: #007aff;
+    border-radius: 50%;
+    font-size: 1px;
+  }
+  #footer {
+    height: 120px;
+  }
+  #resume-links .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
