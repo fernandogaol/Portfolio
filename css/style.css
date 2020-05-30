@@ -192,6 +192,9 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+#projects-container-quiz h3 {
+  padding: 10px;
+}
 
 .app-info {
   color: lightsalmon;
