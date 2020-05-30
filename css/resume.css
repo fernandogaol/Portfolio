@@ -83,7 +83,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 8px;
+  height: 100%;
 }
 #footer {
   width: 100%;
