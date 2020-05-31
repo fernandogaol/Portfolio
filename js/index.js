@@ -1,6 +1,6 @@
 function handleClick() {
-  $('.hamburger .menu').click('li', function (event) {
-    $('.hamburger a').collapse('hide');
+  $('.menu').click('li', function () {
+    $('.toggler').prop('checked', false);
   });
 }
 $(handleClick);
