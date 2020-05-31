@@ -95,14 +95,15 @@ body {
 #bio h2 {
   font-size: 30px;
   text-align: center;
-  color: #007aff;
+  color: rgb(0, 122, 255);
 }
 #bio {
-  margin-top: 30px;
-  margin-bottom: 50px;
   height: 100%;
   font-family: sans-serif, cursive;
   color: #444;
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px;
 }
 .profile-img h6 {
   visibility: hidden;
@@ -143,7 +144,7 @@ body {
 }
 .about-me article {
   text-align: left;
-  margin-top: 30px;
+  width: 100%;
 }
 .about-me h6 {
   visibility: hidden;
@@ -154,8 +155,8 @@ body {
   background-repeat: no-repeat;
   width: 300px;
   height: 450px;
-  margin: 30px auto;
-
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
 }
 #projects-container-quiz,
@@ -164,7 +165,7 @@ body {
   background: rgb(46, 44, 44);
   width: 340px;
   height: 120vh;
-  margin: 10px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -172,11 +173,27 @@ body {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#projects-container-title h2 {
+#projects-container-title h2,
+#about-me-title h2,
+#contact-me-title h2 {
   text-align: center;
-  color: #007aff;
-  padding-bottom: 20px;
-  text-decoration: underline;
+  background: #007aff;
+  color: white;
+  padding: 20px;
+}
+
+#projects-container-title,
+#about-me-title h2,
+#contact-me-title {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  margin: 10px auto;
+}
+#about-me-title {
+  margin-top: -10px;
+}
+#projects-container-title {
+  margin-bottom: 50px;
 }
 #projects-container-quiz h4,
 #projects-container-itav h4,
@@ -286,7 +303,7 @@ body {
   text-align: left;
   width: 5px;
   margin: auto;
-  height: 100vh;
+  height: 90vh;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(250, 70, 70, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -318,6 +335,12 @@ body {
   width: 300px;
   background: rgb(46, 44, 44);
 }
+.bottom-border a {
+  color: #fff;
+}
+.bottom-border ul {
+  padding-left: 15px;
+}
 
 #footer {
   width: 100%;
@@ -347,7 +370,7 @@ body {
   }
 
   #btn {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #landing h1 {
@@ -365,12 +388,13 @@ body {
     font-size: 35px;
     margin: 10px;
   }
+  #bio {
+    width: 80%;
+    border-radius: 5px;
+  }
   #bio h1 {
     margin-top: 50px;
     margin-bottom: 20px;
-  }
-  #btn {
-    font-size: 30px;
   }
   #bio h1 {
     font-size: 37px;
@@ -385,7 +409,7 @@ body {
     width: 90%;
     margin: auto;
     line-height: 45px;
-    font-size: 27px;
+    font-size: 18px;
   }
 
   .skills-used h4 {
@@ -433,6 +457,7 @@ body {
   #projects-container-gtpro {
     float: right;
   }
+
   .project-wrapper {
     display: flex;
   }
