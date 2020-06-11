@@ -66,19 +66,22 @@
 }
 .social-media-links {
   display: flex;
+  padding: 0 10px;
 }
 .recent_projects a {
   padding: 10px;
   color: blue;
 }
-.recent_projects li {
-  list-style: none;
-}
+
 .experience {
   padding: 10px;
 }
-.experience span,
-.education span {
+.experience h5,
+.education h5 {
+  padding-left: 15px;
+}
+.experience h4,
+.education h4 {
   padding-left: 15px;
 }
 #resume-links .icon {
