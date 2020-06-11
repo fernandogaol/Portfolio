@@ -76,13 +76,16 @@
 .experience {
   padding: 10px;
 }
-.experience h5,
-.education h5 {
+.experience label,
+.education label {
   padding-left: 15px;
+  display: flex;
+  font-weight: bold;
 }
-.experience h4,
-.education h4 {
+.experience p,
+.education p {
   padding-left: 15px;
+  font-size: 14px;
 }
 #resume-links .icon {
   height: 40px;
